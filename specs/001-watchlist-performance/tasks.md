@@ -35,22 +35,22 @@ description: "Task list for Watchlist Performance Comparisons implementation"
 
 **Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
 
-- [ ] T007 Provision S3 bucket and Iceberg catalog resources in `infra/terraform/s3-iceberg.tf`
-- [ ] T008 Provision DynamoDB (watchlist metadata) in `infra/terraform/dynamodb.tf`
-- [ ] T009 Provision IAM roles/policies for Lambdas and app access in `infra/terraform/iam.tf`
-- [ ] T010 Configure scheduled ingestion trigger (daily UTC) in `infra/terraform/eventbridge.tf`
-- [ ] T011 Configure backfill trigger for new instrument registration in `infra/terraform/eventbridge.tf`
-- [ ] T012 Implement environment config loader for web in `apps/web/src/config/env.ts`
-- [ ] T013 Implement environment config loader for Lambdas in `lambdas/price-ingest/src/config.ts`
-- [ ] T014 [P] Create watchlist metadata data-access layer in `apps/web/src/services/watchlistStore.ts`
-- [ ] T015 [P] Create instrument registry data-access layer in `apps/web/src/services/instrumentStore.ts`
-- [ ] T016 [P] Create price history reader interface in `apps/web/src/services/priceHistoryStore.ts`
-- [ ] T017 Implement comparison calculation utility in `apps/web/src/services/compare.ts`
-- [ ] T018 Implement scheduled ingestion handler skeleton in `lambdas/price-ingest/src/handler.ts`
-- [ ] T019 Implement backfill-1y handler skeleton in `lambdas/backfill-1y/src/handler.ts`
-- [ ] T020 Implement OHLC fetch adapter interface in `lambdas/price-ingest/src/provider.ts`
-- [ ] T021 Implement Iceberg write adapter in `lambdas/price-ingest/src/icebergWriter.ts`
-- [ ] T022 Implement backfill workflow to fetch 1-year OHLC in `lambdas/backfill-1y/src/backfill.ts`
+- [x] T007 Provision S3 bucket and Iceberg catalog resources in `infra/terraform/s3-iceberg.tf`
+- [x] T008 Provision DynamoDB (watchlist metadata) in `infra/terraform/dynamodb.tf`
+- [x] T009 Provision IAM roles/policies for Lambdas and app access in `infra/terraform/iam.tf`
+- [x] T010 Configure scheduled ingestion trigger (daily UTC) in `infra/terraform/eventbridge.tf`
+- [x] T011 Configure backfill trigger for new instrument registration in `infra/terraform/eventbridge.tf`
+- [x] T012 Implement environment config loader for web in `apps/web/src/config/env.ts`
+- [x] T013 Implement environment config loader for Lambdas in `lambdas/price-ingest/src/config.ts`
+- [x] T014 [P] Create watchlist metadata data-access layer in `apps/web/src/services/watchlistStore.ts`
+- [x] T015 [P] Create instrument registry data-access layer in `apps/web/src/services/instrumentStore.ts`
+- [x] T016 [P] Create price history reader interface in `apps/web/src/services/priceHistoryStore.ts`
+- [x] T017 Implement comparison calculation utility in `apps/web/src/services/compare.ts`
+- [x] T018 Implement scheduled ingestion handler skeleton in `lambdas/price-ingest/src/handler.ts`
+- [x] T019 Implement backfill-1y handler skeleton in `lambdas/backfill-1y/src/handler.ts`
+- [x] T020 Implement OHLC fetch adapter interface in `lambdas/price-ingest/src/provider.ts`
+- [x] T021 Implement Iceberg write adapter in `lambdas/price-ingest/src/icebergWriter.ts`
+- [x] T022 Implement backfill workflow to fetch 1-year OHLC in `lambdas/backfill-1y/src/backfill.ts`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
