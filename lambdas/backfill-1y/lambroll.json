@@ -1,0 +1,8 @@
+{
+  "function_name": "backfill-1y",
+  "handler": "dist/handler.handler",
+  "runtime": "nodejs20.x",
+  "description": "Backfill 1-year OHLC history for new instruments",
+  "timeout": 300,
+  "memory_size": 256
+}

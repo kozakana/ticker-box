@@ -1,0 +1,8 @@
+{
+  "function_name": "price-ingest",
+  "handler": "dist/handler.handler",
+  "runtime": "nodejs20.x",
+  "description": "Scheduled OHLC price ingestion",
+  "timeout": 60,
+  "memory_size": 256
+}

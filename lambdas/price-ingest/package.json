@@ -1,0 +1,10 @@
+{
+  "name": "price-ingest",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/handler.js",
+  "scripts": {
+    "build": "echo 'build placeholder'",
+    "test": "echo 'no tests configured'"
+  }
+}
