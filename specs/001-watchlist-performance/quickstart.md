@@ -41,3 +41,9 @@ terraform plan
 ```bash
 lambroll deploy
 ```
+
+## Runbook Notes
+
+- EventBridge rules are created without Lambda targets in this phase.
+- Glue catalog database is provisioned as a placeholder for Iceberg tables.
+- Update environment variables for `PRICE_BUCKET` and `ICEBERG_DB` before deploying Lambdas.
