@@ -84,12 +84,12 @@ description: "Task list for Watchlist Performance Comparisons implementation"
 
 ### Implementation for User Story 2
 
-- [ ] T030 [US2] Implement add-item API in `apps/web/src/app/api/watchlist/items/route.ts`
-- [ ] T031 [US2] Implement remove-item API in `apps/web/src/app/api/watchlist/items/[symbol]/route.ts`
-- [ ] T032 [P] [US2] Build add-item form in `apps/web/src/components/WatchlistAddForm.tsx`
-- [ ] T033 [P] [US2] Add remove action UI in `apps/web/src/components/WatchlistRowActions.tsx`
-- [ ] T034 [US2] Prevent duplicate symbols in `apps/web/src/services/watchlistStore.ts`
-- [ ] T035 [US2] Trigger backfill on new instrument registration in `apps/web/src/services/instrumentStore.ts`
+- [x] T030 [US2] Implement add-item API in `apps/web/src/app/api/watchlist/items/route.ts`
+- [x] T031 [US2] Implement remove-item API in `apps/web/src/app/api/watchlist/items/[symbol]/route.ts`
+- [x] T032 [P] [US2] Build add-item form in `apps/web/src/components/WatchlistAddForm.tsx`
+- [x] T033 [P] [US2] Add remove action UI in `apps/web/src/components/WatchlistRowActions.tsx`
+- [x] T034 [US2] Prevent duplicate symbols in `apps/web/src/services/watchlistStore.ts`
+- [x] T035 [US2] Trigger backfill on new instrument registration in `apps/web/src/services/instrumentStore.ts`
 
 **Checkpoint**: User Story 2 works independently and does not break US1
 
