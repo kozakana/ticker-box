@@ -6,6 +6,17 @@ type AddResult =
 
 const watchlistItems: Instrument[] = [];
 
+
+let sortPreference: "1d" | "1w" | "1m" | "3m" | "6m" | "1y" | "ytd" = "1d";
+
+export function getSortPreference() {
+  return sortPreference;
+}
+
+export function setSortPreference(value: typeof sortPreference) {
+  sortPreference = value;
+}
+
 export function getWatchlistItems(): Instrument[] {
   return [...watchlistItems];
 }
