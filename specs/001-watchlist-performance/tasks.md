@@ -22,12 +22,12 @@ description: "Task list for Watchlist Performance Comparisons implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create base app and lambda directory structure in `apps/web/`, `lambdas/price-ingest/`, `lambdas/backfill-1y/`
-- [ ] T002 Initialize Next.js + TypeScript app scaffold in `apps/web/package.json` and `apps/web/tsconfig.json`
-- [ ] T003 [P] Create Lambda package scaffolds in `lambdas/price-ingest/package.json` and `lambdas/backfill-1y/package.json`
-- [ ] T004 [P] Add Lambroll config stubs in `lambdas/price-ingest/lambroll.json` and `lambdas/backfill-1y/lambroll.json`
-- [ ] T005 [P] Create Terraform root files in `infra/terraform/main.tf`, `infra/terraform/variables.tf`, `infra/terraform/outputs.tf`
-- [ ] T006 [P] Add shared types file in `apps/web/src/services/types.ts`
+- [x] T001 Create base app and lambda directory structure in `apps/web/`, `lambdas/price-ingest/`, `lambdas/backfill-1y/`
+- [x] T002 Initialize Next.js + TypeScript app scaffold in `apps/web/package.json` and `apps/web/tsconfig.json`
+- [x] T003 [P] Create Lambda package scaffolds in `lambdas/price-ingest/package.json` and `lambdas/backfill-1y/package.json`
+- [x] T004 [P] Add Lambroll config stubs in `lambdas/price-ingest/lambroll.json` and `lambdas/backfill-1y/lambroll.json`
+- [x] T005 [P] Create Terraform root files in `infra/terraform/main.tf`, `infra/terraform/variables.tf`, `infra/terraform/outputs.tf`
+- [x] T006 [P] Add shared types file in `apps/web/src/services/types.ts`
 
 ---
 
