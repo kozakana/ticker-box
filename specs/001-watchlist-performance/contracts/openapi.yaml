@@ -1,0 +1,149 @@
+openapi: 3.0.3
+info:
+  title: Watchlist Performance API
+  version: 1.0.0
+servers:
+  - url: /api
+paths:
+  /watchlist:
+    get:
+      summary: Get the user's watchlist with comparison metrics
+      responses:
+        '200':
+          description: Watchlist payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WatchlistResponse'
+  /watchlist/items:
+    post:
+      summary: Add an instrument to the watchlist
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [symbol]
+              properties:
+                symbol:
+                  type: string
+      responses:
+        '201':
+          description: Item added
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WatchlistResponse'
+        '409':
+          description: Duplicate symbol
+  /watchlist/items/{symbol}:
+    delete:
+      summary: Remove an instrument from the watchlist
+      parameters:
+        - in: path
+          name: symbol
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Removed
+  /instruments/search:
+    get:
+      summary: Search instruments by query
+      parameters:
+        - in: query
+          name: q
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Instrument'
+  /instruments:
+    post:
+      summary: Register a new instrument (admin or internal)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InstrumentCreate'
+      responses:
+        '201':
+          description: Instrument created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Instrument'
+components:
+  schemas:
+    WatchlistResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        sort_key:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/WatchlistItem'
+    WatchlistItem:
+      type: object
+      properties:
+        instrument:
+          $ref: '#/components/schemas/Instrument'
+        comparisons:
+          type: array
+          items:
+            $ref: '#/components/schemas/ComparisonMetric'
+    Instrument:
+      type: object
+      properties:
+        id:
+          type: string
+        symbol:
+          type: string
+        name:
+          type: string
+        type:
+          type: string
+          enum: [stock, index]
+        status:
+          type: string
+          enum: [active, delisted]
+    InstrumentCreate:
+      type: object
+      required: [symbol, name, type]
+      properties:
+        symbol:
+          type: string
+        name:
+          type: string
+        type:
+          type: string
+          enum: [stock, index]
+        listed_at:
+          type: string
+          format: date
+    ComparisonMetric:
+      type: object
+      properties:
+        period:
+          type: string
+          enum: [1d, 1w, 1m, 3m, 6m, 1y, ytd]
+        percent_change:
+          type: number
+        as_of_date:
+          type: string
+          format: date

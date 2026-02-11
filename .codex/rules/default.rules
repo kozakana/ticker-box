@@ -1,0 +1,6 @@
+prefix_rule(pattern=["git", "branch"], decision="allow")
+prefix_rule(pattern=[".specify/scripts/bash/create-new-feature.sh"], decision="allow")
+prefix_rule(pattern=["mkdir", "-p"], decision="allow")
+prefix_rule(pattern=["cat"], decision="allow")
+prefix_rule(pattern=[".specify/scripts/bash/setup-plan.sh"], decision="allow")
+prefix_rule(pattern=[".specify/scripts/bash/check-prerequisites.sh"], decision="allow")
