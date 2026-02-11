@@ -103,9 +103,9 @@ description: "Task list for Watchlist Performance Comparisons implementation"
 
 ### Implementation for User Story 3
 
-- [ ] T036 [US3] Add sort controls UI in `apps/web/src/components/WatchlistSort.tsx`
-- [ ] T037 [US3] Apply sorting in UI state in `apps/web/src/services/watchlistState.ts`
-- [ ] T038 [US3] Persist sort preference in `apps/web/src/services/watchlistStore.ts`
+- [x] T036 [US3] Add sort controls UI in `apps/web/src/components/WatchlistSort.tsx`
+- [x] T037 [US3] Apply sorting in UI state in `apps/web/src/services/watchlistState.ts`
+- [x] T038 [US3] Persist sort preference in `apps/web/src/services/watchlistStore.ts`
 
 **Checkpoint**: All user stories are independently functional
 
