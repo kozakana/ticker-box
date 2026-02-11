@@ -64,13 +64,13 @@ description: "Task list for Watchlist Performance Comparisons implementation"
 
 ### Implementation for User Story 1
 
-- [ ] T023 [US1] Implement GET watchlist API in `apps/web/src/app/api/watchlist/route.ts`
-- [ ] T024 [US1] Compute comparison metrics in `apps/web/src/services/watchlistComparisons.ts`
-- [ ] T025 [P] [US1] Create watchlist page shell in `apps/web/src/app/page.tsx`
-- [ ] T026 [P] [US1] Create watchlist table component in `apps/web/src/components/WatchlistTable.tsx`
-- [ ] T027 [P] [US1] Create comparison value cell component in `apps/web/src/components/ComparisonCell.tsx`
-- [ ] T028 [US1] Wire API data to UI in `apps/web/src/services/watchlistApi.ts`
-- [ ] T029 [US1] Add empty-state and missing-data handling in `apps/web/src/components/WatchlistEmptyState.tsx`
+- [x] T023 [US1] Implement GET watchlist API in `apps/web/src/app/api/watchlist/route.ts`
+- [x] T024 [US1] Compute comparison metrics in `apps/web/src/services/watchlistComparisons.ts`
+- [x] T025 [P] [US1] Create watchlist page shell in `apps/web/src/app/page.tsx`
+- [x] T026 [P] [US1] Create watchlist table component in `apps/web/src/components/WatchlistTable.tsx`
+- [x] T027 [P] [US1] Create comparison value cell component in `apps/web/src/components/ComparisonCell.tsx`
+- [x] T028 [US1] Wire API data to UI in `apps/web/src/services/watchlistApi.ts`
+- [x] T029 [US1] Add empty-state and missing-data handling in `apps/web/src/components/WatchlistEmptyState.tsx`
 
 **Checkpoint**: User Story 1 is fully functional and testable independently
 
