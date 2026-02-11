@@ -115,10 +115,10 @@ description: "Task list for Watchlist Performance Comparisons implementation"
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T039 [P] Add loading and error states in `apps/web/src/components/WatchlistStatus.tsx`
-- [ ] T040 Update documentation with runbook notes in `specs/001-watchlist-performance/quickstart.md`
-- [ ] T041 [P] Add lightweight performance logging in `apps/web/src/services/telemetry.ts`
-- [ ] T042 Validate infra plan for required resources in `infra/terraform/README.md`
+- [x] T039 [P] Add loading and error states in `apps/web/src/components/WatchlistStatus.tsx`
+- [x] T040 Update documentation with runbook notes in `specs/001-watchlist-performance/quickstart.md`
+- [x] T041 [P] Add lightweight performance logging in `apps/web/src/services/telemetry.ts`
+- [x] T042 Validate infra plan for required resources in `infra/terraform/README.md`
 
 ---
 
