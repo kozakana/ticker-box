@@ -1,0 +1,23 @@
+# Node.js / TypeScript
+node_modules/
+dist/
+build/
+*.log
+.env*
+
+# Terraform
+.terraform/
+*.tfstate*
+*.tfvars
+.terraform.lock.hcl
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+.codex/
+apps/web/.next/
